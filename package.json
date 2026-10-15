@@ -1,0 +1,27 @@
+{
+  "name": "my-pi",
+  "version": "0.1.0",
+  "description": "A minimal, provider-agnostic AI coding harness (a tiny Claude Code / Pi) built from scratch in TypeScript",
+  "type": "module",
+  "bin": {
+    "mypi": "bin/mypi.js"
+  },
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0",
+    "dotenv": "^18.0.9",
+    "openai": "^7.45.1",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
